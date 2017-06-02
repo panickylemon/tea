@@ -9,6 +9,7 @@
 	<link rel='stylesheet' href='css/media.css'>
 	<script src="js/jquery-2.0.0.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/jquery.placeholder.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
@@ -16,55 +17,239 @@
 <div class="l-wrapper">
 	<header>
 		<nav class="navbar" role="navigation">
-				<div class="wrap-menu clearfix">
-					<div class="navbar-header">
-						<div class="navbar-logo">
-							<img src="image/logo.png" alt="logo">
-						</div>
-						<button type="button" class="navbar-toggle" data-toggle="collapse"
-						        data-target="#bs-example-navbar-collapse-1">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
+			<div class="wrap-menu clearfix">
+				<div class="navbar-header">
+					<div class="navbar-logo">
+						<img src="image/logo.png" alt="logo">
 					</div>
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav menu-header">
-							<li class="active menu-header__item">
-								<a class="menu-header__link" href="#"><span>Польза</span></a>
-							</li>
-							<li class="menu-header__item">
-								<a class="menu-header__link" href="#"><span>Каталог</span></a>
-							</li>
-							<li class="menu-header__item">
-								<a class="menu-header__link" href="#"><span>Как купить</span></a>
-							</li>
-							<li class="menu-header__item">
-								<a class="menu-header__link" href="#"><span>Отзывы</span></a>
-							</li>
-							<li class="menu-header__item">
-								<a class="menu-header__link menu-phone" href="tel:+79679671100"><span>+7 (967)
-								967-11-00</span></a>
-							</li>
-						</ul>
-					</div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+					        data-target="#bs-example-navbar-collapse-1">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
-			</nav>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav menu-header">
+						<li class="active menu-header__item">
+							<a class="menu-header__link" href="#benefit"><span>Польза</span></a>
+						</li>
+						<li class="menu-header__item">
+							<a class="menu-header__link" href="#catalog"><span>Каталог</span></a>
+						</li>
+						<li class="menu-header__item">
+							<a class="menu-header__link" href="#buy"><span>Как купить</span></a>
+						</li>
+						<li class="menu-header__item">
+							<a class="menu-header__link" href="#"><span>Отзывы</span></a>
+						</li>
+						<li class="menu-header__item">
+							<a class="menu-header__link menu-phone" href="tel:+79679671100"><span>+7 (967)
+								967-11-00</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		<div class="l-container">
 			<div class="header__main-text">
 				<h1 class="header__title">Магазин здорового чая «Ситечко»</h1>
+
 				<p class="header__subtitle">Травяные сборы, полезные чаи, здоровые продукты, иван&nbsp;-&nbsp;чай</p>
 				<a class="green-button" href="#">Подробнее</a>
 			</div>
 		</div>
 	</header>
 	<main class="content">
-		<div class="l-container">
+		<div class="benefit-wrap item-block" id="benefit">
+			<div class="l-container">
+				<h2>Польза травяных чаёв</h2>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<div class="benefit__item">
+							<p class="benefit__item-title">Без кофеина</p>
+
+							<p class="benefit__item-subtitle">Можно пить на ночь</p>
+						</div>
+						<div class="benefit__item">
+							<p class="benefit__item-title">Без ароматизаторов</p>
+
+							<p class="benefit__item-subtitle">Никаких «одеколонных» запахов</p>
+						</div>
+						<div class="benefit__item">
+							<p class="benefit__item-title">Без красителей</p>
+
+							<p class="benefit__item-subtitle">Ваши зубы останутся белыми</p>
+						</div>
+						<div class="benefit__item">
+							<p class="benefit__item-title">Можно пить всем</p>
+
+							<p class="benefit__item-subtitle">Можно детям и пожилым людям</p>
+						</div>
+						<div class="benefit__item">
+							<p class="benefit__item-title">Собраны в России</p>
+
+							<p class="benefit__item-subtitle">Травы Алтая, Крыма, Байкала и пр</p>
+						</div>
+
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<img class="benefit-img" src="image/herb.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="catalog-wrap item-block" id="catalog">
+			<div class="l-container">
+				<h2>Каталог</h2>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3 catalog-item">
+						<img src="image/tea-1.png" alt="">
+
+						<p class="catalog-item__name">Имбирная груша</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 catalog-item">
+						<img src="image/tea-2.png" alt="">
+
+						<p class="catalog-item__name">Ягодный чай Венеры</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 catalog-item">
+						<img src="image/tea-3.png" alt="">
+
+						<p class="catalog-item__name">Мятный эвкалипт</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 catalog-item">
+						<img src="image/tea-4.png" alt="">
+
+						<p class="catalog-item__name">Скарлетт О’Боярышник</p>
+					</div>
+					<a class="green-button" href="#">Больше чаёв</a>
+				</div>
+			</div>
+		</div>
+		<div class="feedback-wrap">
+			<div class="l-container">
+				<form class="feedback-form">
+					<div class="col-sm-12 col-md-4">
+						<input class="feedback-form__input" type="text" placeholder="Ваше имя">
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<input class="feedback-form__input" type="text" placeholder="Ваш телефон">
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<input class="green-button" type="submit" value="Хочу чаю!">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="buy-wrap item-block" id="buy">
+			<div class="l-container">
+				<h2>Как купить?</h2>
+
+				<div class="row">
+					<div class="col-sm-12 col-md-6 buy-item clearfix">
+						<div class="buy-item__img">
+							<img src="image/buy-icon.png" alt="">
+						</div>
+						<div class="buy-item__text">
+							<p class="buy-item__title">Заказ</p>
+
+							<p class="buy-item__subtitle">
+								Для заказа напишите в группу вконтакте vk.com/sitechko или
+								позвоните по телефону +7(967)967&nbsp;-&nbsp;11&nbsp;-&nbsp;00
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 buy-item clearfix">
+						<div class="buy-item__img">
+							<img src="image/card-icon.png" alt="">
+						</div>
+						<div class="buy-item__text">
+							<p class="buy-item__title">Оплата</p>
+
+							<p class="buy-item__subtitle">
+								Оплата производится на карту сбербанка или наличными при получении
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6 buy-item clearfix">
+						<div class="buy-item__img">
+							<img src="image/delivery-icon.png" alt="">
+						</div>
+						<div class="buy-item__text">
+							<p class="buy-item__title">Доставка</p>
+
+							<p class="buy-item__subtitle">
+								Доставка по СПб - 200 руб.<br>
+								Доставка по СПб при заказе от 2000 руб - бесплатно!<br>
+								Доставка по России - рассчитывается индивидуально
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 buy-item clearfix">
+						<div class="buy-item__img">
+							<img src="image/trolley.png" alt="">
+						</div>
+						<div class="buy-item__text">
+							<p class="buy-item__title">Самовывоз</p>
+
+							<p class="buy-item__subtitle">
+								Самовывоз - БЕСПЛАТНО!<br>
+								По адресу: Санкт-Петербург, пр.Луначарского дом 11 корп.1 -
+								(по предварительной договоренности)
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 </div>
 <footer>
 	<div class="l-container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4">
+				<div class="footer-column">
+					<p class="footer-title">Навигация</p>
+					<ul class="footer-menu">
+						<li>
+							<a class="footer-link" href="#benefit">Польза чаёв</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#catalog">Каталог</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#buy">Как купить</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 footer-logo">
+				<img src="image/logo.png" alt="">
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="footer-column">
+					<p class="footer-title">Контакты</p>
+					<ul class="footer-menu social-network">
+						<li>
+							<a class="footer-link" href="#">vk.com/sitechko</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#">instagram.com/sitechkospb</a>
+						</li>
+						<li>
+							тел. <a class="footer-link" href="#">+7(967) 967-11-00</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
 	</div>
 </footer>
 
